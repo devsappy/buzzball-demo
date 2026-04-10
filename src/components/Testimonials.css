@@ -1,0 +1,43 @@
+.testimonials {
+  background-color: #f8f8f8;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.section-title-black {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--black);
+  letter-spacing: -2px;
+  margin-bottom: 4rem;
+}
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 20px;
+  flex: 1;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stars {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text-main);
+  font-style: italic;
+}

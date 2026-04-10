@@ -1,0 +1,129 @@
+.buzz-club {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.buzz-club-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.buzz-club-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.buzz-club-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buzz-club-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.buzz-club-logo h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.buzz-club-logo .big-c {
+  font-size: 5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 0 10px;
+  text-shadow: none;
+}
+
+.buzz-club-logo .est-text {
+  font-size: 1.5rem;
+  vertical-align: super;
+  letter-spacing: 1px;
+}
+
+.buzz-club-bottom {
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0) 100%);
+  padding: 4rem 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buzz-club-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.club-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.club-feature svg {
+  margin-bottom: 1.5rem;
+}
+
+.club-feature h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.club-feature p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.btn-signup-transparent {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-signup-transparent:hover {
+  background-color: var(--white);
+  color: var(--black);
+}

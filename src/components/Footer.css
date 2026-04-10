@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 6rem 4rem 2rem 4rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #333;
+}
+
+.footer-logo {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.footer-contact {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-blue);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-column a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  transition: opacity 0.3s;
+  text-transform: uppercase;
+}
+
+.footer-column a:hover {
+  opacity: 0.7;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 0.5rem;
+}
+
+.newsletter input {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  flex: 1;
+  outline: none;
+}
+
+.newsletter input::placeholder {
+  color: #999;
+}
+
+.newsletter button {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-legal a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: var(--white);
+}

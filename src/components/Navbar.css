@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-center {
+  flex: 0 1 auto;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--black);
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  text-transform: none;
+}
+.logo-r {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.chevron {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  transform: rotate(45deg);
+  margin-bottom: 4px;
+}
+
+.btn-where-to-buy {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.btn-where-to-buy:hover {
+  opacity: 0.8;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--black);
+  transition: all 0.3s ease;
+}

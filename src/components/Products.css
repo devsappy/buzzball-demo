@@ -1,0 +1,139 @@
+.products {
+  background-color: var(--white);
+  padding: 6rem 0 0 0; /* no bottom padding since it bleeds to next section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.products-title {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #222;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.product-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.filter-pill {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--black);
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
+  border: 1px solid var(--black);
+  transition: all 0.3s ease;
+}
+
+.filter-pill.active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.filter-pill:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+
+.product-count {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--black);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-showcase {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.showcase-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem 4rem 2rem;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.showcase-img-wrapper {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.showcase-img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.showcase-card:hover .showcase-img {
+  transform: scale(1.05);
+}
+
+.showcase-stars {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.showcase-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  max-width: 80%;
+}
+
+.showcase-subtitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.carousel-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%);
+  width: 80px;
+  height: 80px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+  color: var(--black);
+}

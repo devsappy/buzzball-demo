@@ -1,0 +1,124 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mission-banner-top {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.mission-banner-top h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.mission-content {
+  background-color: #cb0436; /* Exact deep red from screenshot */
+  color: var(--white);
+  padding: 6rem 2rem 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background circles for mission */
+.mission-content::before, .mission-content::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 40px solid rgba(255,255,255,0.05);
+  box-sizing: border-box;
+}
+
+.mission-content::before {
+  top: -100px;
+  left: -200px;
+}
+
+.mission-content::after {
+  bottom: -100px;
+  right: -200px;
+}
+
+.mission-header-text {
+  margin-bottom: 5rem;
+  z-index: 2;
+}
+
+.mission-subtitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+}
+
+.mission-title {
+  font-size: 8.5rem;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -3px;
+}
+
+.mission-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 4rem;
+  z-index: 2;
+}
+
+.mission-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-feature svg {
+  margin-bottom: 1.5rem;
+}
+
+.mission-feature h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.mission-feature p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+.btn-full-story {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 40px;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.btn-full-story:hover {
+  transform: scale(1.05);
+}
