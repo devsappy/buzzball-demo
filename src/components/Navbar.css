@@ -103,3 +103,37 @@
   background-color: var(--black);
   transition: all 0.3s ease;
 }
+
+@media (max-width: 1024px) {
+  .nav-left {
+    display: none;
+  }
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .nav-right {
+    gap: 1rem;
+  }
+  .logo {
+    font-size: 1.8rem;
+  }
+  .lang-dropdown {
+    display: none;
+  }
+  .btn-where-to-buy {
+    padding: 0.6rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-where-to-buy {
+    display: none;
+  }
+}

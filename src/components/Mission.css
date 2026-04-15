@@ -122,3 +122,12 @@
 .btn-full-story:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .btn-full-story {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+}

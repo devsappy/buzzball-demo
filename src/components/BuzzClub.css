@@ -127,3 +127,12 @@
   background-color: var(--white);
   color: var(--black);
 }
+
+@media (max-width: 768px) {
+  .btn-signup-transparent {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+}

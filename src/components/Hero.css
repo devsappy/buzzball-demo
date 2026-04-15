@@ -61,3 +61,12 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 768px) {
+  .btn-find {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
